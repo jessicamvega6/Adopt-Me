@@ -49,7 +49,6 @@ let SearchParams = () => {
                     <select
                     onChange={ (e) => {
                             setAnimal(e.target.value);
-                            setBreed("");
                         }} 
                         id="animal"
                         placeholder="Animal"

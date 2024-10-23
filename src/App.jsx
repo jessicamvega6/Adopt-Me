@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Details from './Details'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
+
 let queryClient = new QueryClient({
     defaultOptions: {
         queries: {
@@ -23,7 +24,7 @@ const App = () => {
                     <Routes>
                         <Route path='/details/:id' element={<Details />} />
                         <Route path='/' element={<SearchParams />} />
-                </Routes>
+                    </Routes>
             </QueryClientProvider>
 
         </BrowserRouter>

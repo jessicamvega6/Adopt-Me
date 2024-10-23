@@ -68,7 +68,7 @@ let SearchParams = () => {
                 <label htmlFor="Breed">
                     Breed
                     <select
-                    onChange={e => setBreed(e.target.value)}
+                    
                         id="breed"
                         disabled={breeds.length === 0}
                         placeholder="Breed"

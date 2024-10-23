@@ -16,12 +16,12 @@ class Carousel extends Component {
             active: +event.target.dataset.index //+ will coerce the string into what ever type it needs to be
         });
     }
+    
 
     render () {
         let {active} = this.state  //is mutable
         let {images} = this.props //is not mutable
-        debugger
-
+        // throw new Error("test error"); //testing error handling
 
         return (
             <div className="carousel">

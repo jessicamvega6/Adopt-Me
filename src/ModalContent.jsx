@@ -1,4 +1,5 @@
 import Modal from "./Modal"
+import { Link } from "react-router-dom"
 
 
 let ModelContent = ({ pet, modalFunc }) => {
@@ -7,10 +8,15 @@ let ModelContent = ({ pet, modalFunc }) => {
         <Modal>
 
             <div>
-            <h1>Would you like to adopt {pet}?</h1>
+            <h1>Would you like to adopt {pet.name}?</h1>
             <div className="buttons">
-                <button>Yes</button>
-                {/* <Link to="/">Yes</Link> */}
+                <Link 
+                    // to={`/adopt/${pet.id}`} 
+                    to={"/adopt"}
+                    state={{ pet: pet }}
+                    >Yes
+                    
+                </Link>
                 <button onClick={() => modalFunc(false)}>No</button>
             </div>
             </div>

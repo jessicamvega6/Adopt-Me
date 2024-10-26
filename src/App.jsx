@@ -3,6 +3,7 @@ import SearchParams from './SearchParams'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Details from './Details'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import AdoptionForm from './AdoptionForm'
 
 
 let queryClient = new QueryClient({
@@ -14,6 +15,7 @@ let queryClient = new QueryClient({
     }
 });
 
+debugger
 const App = () => {
     return (
         <BrowserRouter>
@@ -23,6 +25,9 @@ const App = () => {
                     </header>
                     <Routes>
                         <Route path='/details/:id' element={<Details />} />
+                        {/* <Route path='/adopt/:id' element={<AdoptionForm />} /> */}
+                        <Route path='/adopt/' element={<AdoptionForm />} />
+
                         <Route path='/' element={<SearchParams />} />
                     </Routes>
             </QueryClientProvider>

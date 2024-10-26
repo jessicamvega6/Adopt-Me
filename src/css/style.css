@@ -10,7 +10,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.search-params {
+.search-params, .adoption {
   width: 1100px;
   margin: 0 auto;
 }
@@ -33,6 +33,44 @@ body {
   padding: 15px;
   float: left;
   margin-bottom: 25px;
+}
+
+.adoption form  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #faeff0; 
+}
+
+.adoption form div {
+  width: 100%;
+  max-width: 300px;  
+  margin: 10px 0;
+}
+
+.adoption input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.adoption-form-sumbit {
+    /* Center the button */
+  display: block;
+  margin: 20px auto;
+
+   /* Styling */
+   background-color: #f76c6c;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px; /* Larger font size */
+   width: 200px;
+   padding: 15px 15px;
+
 }
 
 .details {
